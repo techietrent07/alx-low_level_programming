@@ -16,7 +16,8 @@ int _atoi(char *s)
 	while (s[c])
 	{
 		if (s[c] == 45)
-		{	min *= -1;
+		{	
+			min *= -1;
 	}
 	while (s[c] >= 48 && s[c] <= 57)
 	{
@@ -27,8 +28,10 @@ int _atoi(char *s)
 
 	if (isi == 1)
 	{
-		break; c++;
+	break; 
 	}
+	
+	c++;
 	}
 	uns *= min;
 	return (uns);
