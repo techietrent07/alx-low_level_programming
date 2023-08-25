@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * befmain - A function that prints before
+ * the main function is executed
+ * Return: 0
  */
-int main(void)
+
+void __attribute__ ((constructor)) befmain(void)
 {
-	printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
-	return (0);
+	printf("You're beat! and yet, you must allow");
+	printf(",\nI bore my house upon my back!\n");
 }
